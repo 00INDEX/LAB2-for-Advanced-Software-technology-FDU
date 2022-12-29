@@ -77,7 +77,7 @@ class Worker:
                 complainAction = ComplainAction()
                 complainAction.id = complain_id
                 complainAction.load()
-                reason = input("请输入投诉情况说明")
+                reason = input("请输入投诉情况说明：")
                 complainAction.reason.append({
                     "name": self.name,
                     "reason": reason
@@ -102,5 +102,5 @@ class Worker:
                     type = "电工"
                 elif data["type"] == 2:
                     type = "网络修理"
-                menu.append_item(FunctionItem(f"姓名：{data['name']}，类型：{type}", func, [data["name"]]))
+                menu.append_item(FunctionItem(f"姓名：{data['name']}||类型：{type}", func, [data["name"]]))
         menu.show()

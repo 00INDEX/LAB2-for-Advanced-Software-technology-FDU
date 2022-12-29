@@ -47,7 +47,7 @@ class Manager:
                 complainAction = ComplainAction()
                 complainAction.id = complain_id
                 complainAction.load()
-                explain = input("请输入投诉情况说明")
+                explain = input("请输入投诉情况说明：")
                 complainAction.explain = explain
                 complainAction.status = 2
                 complainAction.save()

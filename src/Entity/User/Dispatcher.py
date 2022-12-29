@@ -56,7 +56,7 @@ class Dispatcher:
                 complainAction = ComplainAction()
                 complainAction.id = complain_id
                 complainAction.load()
-                reason = input("请输入投诉情况说明")
+                reason = input("请输入投诉情况说明：")
                 complainAction.reason.append({
                     "name": self.name,
                     "reason": reason
