@@ -78,6 +78,7 @@ class Task:
                     status = "已完成"
                 menu.append_item(FunctionItem(f"申请客户：{data['client_name']}||情况描述：{data['info']}||"
                                               f"联系方式：{data['contact']}||创建时间：{data['apply_time']}||"
+                                              f"用户评价：{data['comment']}||"
                                               f"状态：{status}", func, [key.decode()]))
         menu.show()
 
@@ -94,7 +95,7 @@ class Task:
                 elif data["status"] == 2:
                     status = "已完成"
                 menu.append_item(FunctionItem(f"申请客户：{data['client_name']}||情况描述：{data['info']}||"
-                                              f"联系方式：{data['contact']}||创建时间：{data['apply_time']}||"
+                                              f"联系方式：{data['contact']}||创建时间：{data['apply_time']}||用户评价：{data['comment']}||"
                                               f"状态：{status}", func, [key.decode()]))
         menu.show()
 
@@ -111,7 +112,7 @@ class Task:
                 elif data["status"] == 2:
                     status = "已完成"
                 menu.append_item(FunctionItem(f"申请客户：{data['client_name']}||情况描述：{data['info']}||"
-                                              f"联系方式：{data['contact']}||创建时间：{data['apply_time']}||"
+                                              f"联系方式：{data['contact']}||创建时间：{data['apply_time']}||用户评价：{data['comment']}||"
                                               f"状态：{status}", func, [key.decode()]))
         menu.show()
 
@@ -150,7 +151,7 @@ class Task:
                 elif data["status"] == 2:
                     status = "已完成"
                 menu.append_item(MenuItem(f"申请客户：{data['client_name']}||情况描述：{data['info']}||"
-                                              f"联系方式：{data['contact']}||创建时间：{data['apply_time']}||"
+                                              f"联系方式：{data['contact']}||创建时间：{data['apply_time']}||用户评价：{data['comment']}||"
                                               f"状态：{status}"))
         menu.show()
 
